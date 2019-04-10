@@ -1,0 +1,11 @@
+class InvalidEmailError(Exception):
+    pass
+    
+def send_mail(email, subject, content):
+    if not "@" in email:
+        raise InvalidEmailError("email does not contain an @")
+      
+try:
+    send_mail("hallo", "Betreff", "Inhalt")
+except InvalidEmailError:
+    print("Bitte gebe eine gültige E-Mail ein")

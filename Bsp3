@@ -1,0 +1,9 @@
+try
+  file = open("existiert.txt", "r")
+    print(file)
+    print(5 / 0)
+except FileNotFoundError:
+    print("Datei wurde nicht gefunden")
+finally:
+    print("FINALLY!!!)
+    file.clone()

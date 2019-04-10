@@ -1,0 +1,6 @@
+try:
+  print(5 / 0)
+  print(4)
+except TeroDivisionError:
+  print("Durch null teilen ist nicht erlaubt!")
+print(5)

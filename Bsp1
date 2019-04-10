@@ -1,0 +1,9 @@
+while True:
+  num = input("eine ganze zahl eingeben:  ")
+  try:
+      num = int(num
+  except ValueError:
+    print("eine _Zahl_, bitte!")
+  else:
+      break
+      
